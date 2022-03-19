@@ -55,7 +55,7 @@ export default function Home({myRides}) {
 
   function fetchCityRides(value){
     setCityValue(value)
-    let tempRides = globalRides.filter((ride) => ride.city === value)
+    let tempRides = rides.filter((ride) => ride.city === value)
     setRides(tempRides)
   }
   return <>
