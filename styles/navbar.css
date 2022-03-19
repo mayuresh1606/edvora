@@ -1,0 +1,32 @@
+.navbar {
+  width: 100vw;
+  background: #101010;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 4.5rem;
+  color: white;
+}
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  width: 12vw;
+}
+.user-img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.vertical-align {
+  margin: auto 0;
+}
+.user-name {
+  font: Inter;
+}
+@media screen and (max-width: 969px) {
+  .navbar {
+    padding: 5px 1.5rem;
+  }
+  .user-info {
+    width: 25vw;
+  }
+}
