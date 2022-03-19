@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import {BsFilterLeft} from "react-icons/bs"
-import Card from '../components/card'
+import Card from '../components/Card'
 import { useGlobalContext } from '../context'
 import { useEffect, useState } from 'react'
 export default function Home({myRides}) {
