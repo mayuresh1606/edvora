@@ -26,12 +26,13 @@ export const AppProvider = ({children}) => {
 
     const setCitiesAndStates = (rides) => {
         setStateCity(() =>{
-            for (const ride of rides){
-                if (stateCity.states.length <= 0 || stateCity.cities.length <= 0 ){
+            if (stateCity.states.length <= 0 || stateCity.cities.length <= 0 ){
+                for (const ride of rides){
                     stateCity.states.push(ride.state)
                     stateCity.cities.push(ride.city)
                 }
             }
+            console.log(stateCity);
             return stateCity;
         })
     }
